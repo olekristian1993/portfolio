@@ -1,6 +1,12 @@
 //IMPORTS
 @import "../variables/variables";
-@import "../variables/fonts";
 @import "../variables/functions";
 @import "./animations";
 @import "./footer";
+
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+
+//Mixins
+
+@import "../mixins/mixins";

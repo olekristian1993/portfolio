@@ -38,6 +38,7 @@ h1 span {
 h1 {
   color: $headlineColor;
   margin: 0;
+  @include headlineFont;
 }
 
 h2 {
@@ -63,14 +64,26 @@ section {
 }
 
 .two {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 .three {
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
 }
 
 .four {
-  background-color: green;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.h1tag {
+  color: #ff616a;
+}
+
+.h1tagless {
+  color: #888d94;
+}
+
+.experience {
+  padding: 5rem 0 20rem 0;
 }
