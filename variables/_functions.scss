@@ -1,0 +1,5 @@
+// Px to rem (Use toRem(value) in CSS)
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}

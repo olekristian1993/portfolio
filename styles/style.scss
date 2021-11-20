@@ -3,14 +3,49 @@
 
 //Main
 
-html {
-  font-size: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background-color: $backgroundColor;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  #gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 100%,
+      from($lightBlue),
+      to($darkBlue)
+    );
+    background: -webkit-linear-gradient(top, $lightBlue, $darkBlue);
+    background: -moz-linear-gradient(top, $lightBlue, $darkBlue);
+    background: -ms-linear-gradient(top, $lightBlue, $darkBlue);
+    background: -o-linear-gradient(top, $lightBlue, $darkBlue);
+    background: linear-gradient(top, $lightBlue, $darkBlue);
+  }
+
+  > footer {
+    position: sticky;
+    top: 100vh;
+  }
 }
 
 h1 {
-  color: white;
+  color: $headlineColor;
+}
+
+h2 {
+  color: $secondHeadlineColor;
+  font-size: toRem(16);
+}
+
+p {
+  color: $secondHeadlineColor;
 }
