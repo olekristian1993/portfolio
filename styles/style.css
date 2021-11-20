@@ -43,7 +43,7 @@
   }
   60%,
   90% {
-    width: 18em;
+    width: 17.5em;
   }
 }
 
@@ -55,7 +55,7 @@
   }
   60%,
   90% {
-    width: 18em;
+    width: 17.5em;
   }
 }
 
@@ -67,7 +67,7 @@
   }
   10%,
   40% {
-    width: 9.2em;
+    width: 8.8em;
   }
 }
 
@@ -79,7 +79,7 @@
   }
   10%,
   40% {
-    width: 9.2em;
+    width: 8.8em;
   }
 }
 
@@ -129,6 +129,7 @@
           transition-duration: 3s;
   background: -webkit-gradient(linear, left top, left bottom, from(#c31432), to(#240b36));
   background: linear-gradient(#c31432, #240b36);
+  border: 1px solid black;
 }
 
 footer {
@@ -151,12 +152,29 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
   background: linear-gradient(to right, #240b36, #c31432);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 h1 span {
   color: white;
   font-size: 4.5rem;
+}
+
+h1 {
+  color: white;
 }
 
 h2 {
@@ -176,11 +194,12 @@ a {
   color: beige;
 }
 
-.jumbotron {
-  background-color: transparent;
+section {
+  width: 100%;
+  height: 100vh;
 }
 
-.col-sm-3 {
-  width: 100%;
+.two {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
