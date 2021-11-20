@@ -142,11 +142,14 @@ footer p {
   opacity: 0.5;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   background: #c31432;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
@@ -175,6 +178,7 @@ h1 span {
 
 h1 {
   color: white;
+  margin: 0;
 }
 
 h2 {
@@ -201,5 +205,14 @@ section {
 
 .two {
   background-color: black;
+}
+
+.three {
+  background-color: blue;
+  margin: 0;
+}
+
+.four {
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */

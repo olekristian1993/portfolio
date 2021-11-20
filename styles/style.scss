@@ -3,11 +3,13 @@
 
 //Main
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+body {
   background: #c31432; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -35,6 +37,7 @@ h1 span {
 
 h1 {
   color: $headlineColor;
+  margin: 0;
 }
 
 h2 {
@@ -61,4 +64,13 @@ section {
 
 .two {
   background-color: black;
+}
+
+.three {
+  background-color: blue;
+  margin: 0;
+}
+
+.four {
+  background-color: green;
 }
