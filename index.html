@@ -1,33 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/styles/style.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="/functions/main.js"></script>
 
-    <meta
-      name="description"
-      content="Portfolio, website, hjemmeside, portefølje, Ole Kristian Heian Olaisen"
-    />
-    <meta name="author" content="Ole Kristian Heian Olaisen" />
-    <title>Home</title>
+    <!--Egendefinert CSS-->
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
-
   <body>
-    <div id="gradient">
-      <h1>Hi, I'm Ole Kristian.</h1>
-      <h2>I'm a front-end developer in Norway.</h2>
-
-      <footer>
-        <p>ole</p>
-      </footer>
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1><span class="text_1">Hi, I'm Ole Kristian.</span>
+            <span class="text_2">I'm a front-end developer from Norway.</span>
+            </h1>
+        </div>
+      </div>
     </div>
+
+    <div class="container-fluid bg-3 text-center">
+      <h3>Experience</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-3">
+          <p>HTML</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+          
+        </div>
+        <div class="col-sm-3">
+          <p>CSS3&SCSS</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <p>JavaScript</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <p>PHP</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container-fluid bg-3 text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <p>SQL</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <p>Bootstrap</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <p>React</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <p>Github</p>
+          <div class="progress skill-bar ">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill"><i class="val"></i></span>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <footer class="container-fluid text-center fixed-bottom">
+      <p class="footerText">&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Ole Kristian Heian Olaisen </p>
+    </footer>
   </body>
 </html>

@@ -1,6 +1,144 @@
-html,
-body {
-  height: 100%;
+.text_1 {
+  -webkit-animation: text1;
+          animation: text1;
+}
+
+.text_2 {
+  -webkit-animation: text2;
+          animation: text2;
+}
+
+.text_1,
+.text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-timing-function: steps(20, end);
+          animation-timing-function: steps(20, end);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.text_1::after,
+.text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  -webkit-animation: caret infinite;
+          animation: caret infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: steps(1, end);
+          animation-timing-function: steps(1, end);
+}
+
+@-webkit-keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 18em;
+  }
+}
+
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 18em;
+  }
+}
+
+@-webkit-keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 9.2em;
+  }
+}
+
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 9.2em;
+  }
+}
+
+@-webkit-keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.progress {
+  height: 0.5rem;
+  width: 15rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.progress .skill {
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c31432), to(#240b36));
+  background: linear-gradient(#c31432, #240b36);
+}
+
+footer {
+  position: fixed;
+  background-color: transparent;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.5;
 }
 
 body {
@@ -8,24 +146,17 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body #gradient {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#243b55), to(#141e30));
-  background: linear-gradient(top, #243b55, #141e30);
-}
-
-body > footer {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100vh;
-}
-
-h1 {
+h1 span {
   color: white;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -33,7 +164,23 @@ h2 {
   font-size: 1rem;
 }
 
+h3 {
+  color: beige;
+}
+
 p {
   color: beige;
+}
+
+a {
+  color: beige;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.col-sm-3 {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
