@@ -206,7 +206,7 @@ section {
 }
 
 .two {
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: black;
 }
 
 .three {
@@ -228,5 +228,19 @@ section {
 
 .experience {
   padding: 5rem 0 20rem 0;
+}
+
+.text {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+
+.text.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=style.css.map */
