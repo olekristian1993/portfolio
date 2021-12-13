@@ -6,6 +6,9 @@ $(document).ready(function () {
   });
 });
 
+
+// Scroll jump click
+
 function jumpScroll1() {
   window.scroll(0, 0);
 }

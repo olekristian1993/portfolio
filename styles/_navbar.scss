@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    position: fixed;
+    text-decoration: none;
+    margin: 7rem;
+
+    a {
+            color: $backgroundRed;
+            font-size: toRem(40);
+            
+    }
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+
+
