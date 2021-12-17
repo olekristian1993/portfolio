@@ -17,34 +17,23 @@ body {
     $backgroundRed
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, $backgroundBlue, $backgroundRed);
-  
-  
 }
-
-
 
 html {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   scroll-behavior: smooth;
-
 }
 
 html::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
-  
 }
 
-
-
-.container-full{
+.container-full {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  
 }
-
-
 
 h1 span {
   color: $headlineColor;
@@ -81,16 +70,28 @@ section {
 }
 
 .two {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.333) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.333) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .three {
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.666) 0%, rgba(0, 0, 0, 0.333) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.666) 0%,
+    rgba(0, 0, 0, 0.333) 100%
+  );
   margin: 0;
 }
 
 .four {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.666) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.666) 100%
+  );
 }
 
 .h1tag {
@@ -114,4 +115,56 @@ section {
 .text.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+label {
+  color: white;
+  margin: 1rem;
+  @include headlineFont;
+  font-size: toRem(32);
+}
+
+input {
+  background-color: $backgroundText;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+input:focus {
+  color: white;
+}
+
+.submitbutton {
+  background-color: rgba(255, 255, 255, 0.062);
+  color: white;
+  width: 50%;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.submitbutton:hover {
+  background-color: $backgroundRed;
+  transition-timing-function: ease-in-out;
+  transition-delay: 250ms;
+  color: white;
+}
+
+textarea {
+  background-color: $backgroundText;
+  border-radius: 0.5rem;
+  border: none;
+  height: 5rem;
+}
+
+textarea:focus {
+  color: white;
 }

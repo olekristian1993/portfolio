@@ -277,4 +277,63 @@ section {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+label {
+  color: white;
+  margin: 1rem;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+input:focus {
+  color: white;
+}
+
+.submitbutton {
+  background-color: rgba(255, 255, 255, 0.062);
+  color: white;
+  width: 50%;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.submitbutton:hover {
+  background-color: #c31432;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  color: white;
+}
+
+textarea {
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 0.5rem;
+  border: none;
+  height: 5rem;
+}
+
+textarea:focus {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

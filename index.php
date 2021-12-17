@@ -1,3 +1,20 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("olekristianolaisen@gmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -226,6 +243,25 @@
     <section class="four">
       <div class="headline">
       <h1 class="experience d-flex justify-content-center headline">Contact</h1>
+
+      <form method="post" action="subscriberform.php" class="experience d-flex justify-content-center">
+
+      <!--Name-->
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+
+      <!--E-mail-->
+      <label for="email">E-mail:</label>
+      <input type="email" name="email">
+
+      <label for="message">Your message:</label>
+        <textarea name="message"></textarea>
+        
+        <input type="submit" class="submitbutton">
+        
+        
+        </form>
+
       </div>
     </section>
 
