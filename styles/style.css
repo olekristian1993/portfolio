@@ -302,6 +302,7 @@ input {
   background-color: rgba(255, 255, 255, 0.137);
   border-radius: 0.5rem;
   border: none;
+  color: #c31432;
 }
 
 input:focus {
@@ -330,10 +331,33 @@ textarea {
   background-color: rgba(255, 255, 255, 0.137);
   border-radius: 0.5rem;
   border: none;
-  height: 5rem;
+  height: 10rem;
+  min-height: 5rem;
+  resize: none;
+  color: #c31432;
 }
 
 textarea:focus {
   color: white;
+}
+
+.inputfield {
+  padding: 1rem;
+}
+
+::-webkit-input-placeholder {
+  color: #c31432;
+}
+
+:-ms-input-placeholder {
+  color: #c31432;
+}
+
+::-ms-input-placeholder {
+  color: #c31432;
+}
+
+::placeholder {
+  color: #c31432;
 }
 /*# sourceMappingURL=style.css.map */

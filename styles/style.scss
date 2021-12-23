@@ -136,6 +136,7 @@ input {
   background-color: $backgroundText;
   border-radius: 0.5rem;
   border: none;
+  color: $backgroundRed;
 }
 
 input:focus {
@@ -162,9 +163,20 @@ textarea {
   background-color: $backgroundText;
   border-radius: 0.5rem;
   border: none;
-  height: 5rem;
+  height: 10rem;
+  min-height: 5rem;
+  resize: none;
+  color: $backgroundRed;
 }
 
 textarea:focus {
   color: white;
+}
+
+.inputfield {
+  padding: 1rem;
+}
+
+::placeholder {
+  color: $backgroundRed;
 }
